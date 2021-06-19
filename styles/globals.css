@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.w-card {
+  width: 442px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Prompt Light";
+  src: local('Prompt Light'), url('/fonts/Prompt-Light.ttf');
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Prompt Medium";
+  src: local('Prompt Medium'), url('/fonts/Prompt-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Prompt SemiBold";
+  src:  local('Prompt SemiBold'), url('/fonts/Prompt-SemiBold.ttf');
 }
