@@ -8,7 +8,7 @@ export const ContentCard = ({ data, scoreType }) => {
       <div className="flex items-center mt-3 font-prompt-light">
         <p className="mr-6 text-heading-6 text-dark-400">รอบที่เปิด</p>
         {data.map((round, i) => (
-          <div key={i} className="flex m-1 flex-col items-center justify-center rounded-full w-7 h-7 bg-greenish-teal">
+          <div key={i} className={`flex m-1 flex-col items-center justify-center rounded-full w-7 h-7 ${Math.sign(round) === -1 ? 'bg-warn-grey opacity-50': 'bg-greenish-teal'}`}>
             <p className="text-white">{round}</p>
           </div>
         ))}
