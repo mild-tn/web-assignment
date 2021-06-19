@@ -5,11 +5,13 @@ import { apiTcas } from '../../../core/services/getTCASAsset'
 
 export class homePageContext {
   data
+  isLike
 
   constructor() {
     makeAutoObservable(this)
 
     this.data = []
+    this.isLike = false
   }
 
   setState = (key, value) => {
